@@ -122,7 +122,7 @@ const config = {
 module.exports = (env, argv) => {
   if (argv.hot) {
     // Cannot use 'contenthash' when hot reloading is enabled.
-    config.output.filename = '[name].[hash].js';
+    config.output.filename = '[name].js';
   }
   if (argv.mode === 'development') {
     config.devtool = 'source-map';

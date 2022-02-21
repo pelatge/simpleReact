@@ -1,4 +1,4 @@
-import http from "./../Configs/http-common";
+import {http } from "./../Configs";
 
 const getAll = () => {
   return http.get("/posts");
